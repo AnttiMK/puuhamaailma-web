@@ -20,10 +20,6 @@ body {
     color    : rgb(255, 198, 41) !important;
 }
 
-.karuselli {
-    background-color: rgb(170, 170, 170);
-}
-
 .discordWidget {
     overflow: hidden;
     background-color: tomato;
@@ -65,4 +61,3 @@ body {
     opacity: 1;
     transform: translateY(0)
   }
-
