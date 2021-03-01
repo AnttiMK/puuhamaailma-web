@@ -1,0 +1,68 @@
+body {
+    overflow-x : hidden;
+    background-image: url("/images/background.webp");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.nav-item {
+    display: inline-block;
+    /*background-color: rgb(255, 217, 0);*/
+    margin: 4px;
+}
+
+.nav-link {
+    color: rgb(255, 255, 255) !important;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+    color    : rgb(255, 198, 41) !important;
+}
+
+.karuselli {
+    background-color: rgb(170, 170, 170);
+}
+
+.discordWidget {
+    overflow: hidden;
+    background-color: tomato;
+}
+
+.leftColumn {
+    background-color: rgb(255, 16, 195);
+}
+
+.rightColumn {
+    background-color: rgb(16, 255, 155);
+}
+
+.scrollToTopBtn {
+    background-color: black;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 48px;
+    width: 48px;
+    
+    /* place it at the bottom right corner */
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    /* keep it at the top of everything else */
+    z-index: 100;
+    /* hide with opacity */
+    opacity: 0;
+    /* also add a translate effect */
+    transform: translateY(100px);
+    /* and a transition */
+    transition: all .5s ease
+  }
+      
+  .showBtn {
+    opacity: 1;
+    transform: translateY(0)
+  }
+
