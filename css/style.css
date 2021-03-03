@@ -80,6 +80,10 @@ body {
     background-color: rgb(16, 255, 155);
 }
 
+.card.voteCard p {
+    color: white;
+}
+
 .dropdown-item.active,
 .dropdown-item:active {
     color           : #212529;
