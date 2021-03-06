@@ -47,39 +47,35 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="container py-5">
-            <div class="row justify-content-md-center">
-                <div class="col col-lg-2"></div>
-                <div class="col-md-auto">
-                    <a href="/"><img src="/images/logo.png" class="img-fluid"></a>
-                </div>
-                <div class="d-flex col col-lg-2 align-items-center"></div>
-            </div>
-            <div class="row pt-2">
-                <span style="text-align: center; color: #ffffff">Ainutlaatuisia pelihetkiä jo vuodesta 2016!</span>
-            </div>
-        </div>
-    </header>
 
     <!-- VOTE MODAL -->
 
     <div class="modal fade" id="voteModal" tabindex="-1" aria-labelledby="voteModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content">
+            <div class="modal-content bg-dark">
                 <div class="modal-header">
                     <h5 class="modal-title" id="voteModalLabel">
                         Äänestä serveriä!
                     </h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body">
-                    <p>Äänestämällä autat Puuhamaailmaa saamaan näkyvyyttä palvelinlistoilla.
-                        Tällä tavoin pelaajayhteisömme kasvaa. Samalla voitat myös upeita palkintoja palvelimellamme.
-                        Muista siis käydä äänestämässä päivittäin! Pääset äänestämään klikkaamalla alla olevia linkkejä.
-                    </p>
+                <div class="modal-body text-light">
+                    <span>Äänestämällä autat Puuhamaailmaa saamaan näkyvyyttä palvelinlistoilla.
+                        Tällä tavoin pelaajayhteisömme kasvaa ja samalla voitat upeita palkintoja palvelimella!
+                        Muista siis äänestää päivittäin alla olevia linkkejä klikkaamalla!
+                    </span>
                 </div>
-                <div class="modal-footer"></div>
+                <div class="modal-footer">
+                    <div class="me-auto">
+                        <a href="https://minecraft-mp.com/server/238611/vote/" role="button" class="btn btn-warning">Minecraft-MP</a>
+                        <a href="https://minecraft-mp.com/server/238611/vote/" role="button" class="btn btn-warning">TopG</a>
+                        <a href="https://minecraft-mp.com/server/238611/vote/" role="button" class="btn btn-warning">Minecraft-MP</a>
+                    </div>
+                    <div class="ms-auto">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sulje</button>
+                    </div>
+                    
+                </div>
             </div>
         </div>
     </div>
@@ -106,10 +102,25 @@
         </div>
     </div>
 
-    <!-- NAVBAR-->
+    <div class="container">
+    
+        <header class="header my-5">
+                <div class="row justify-content-md-center">
+                    <div class="col col-lg-2"></div>
+                    <div class="col-md-auto">
+                        <a href="/"><img src="/images/logo.png" class="img-fluid"></a>
+                    </div>
+                    <div class="d-flex col col-lg-2 align-items-center"></div>
+                </div>
+                <div class="row pt-2">
+                    <span style="text-align: center; color: #ffffff">Ainutlaatuisia pelihetkiä jo vuodesta 2016!</span>
+                </div>
+        </header>
 
-    <div class="container sticky-top bg-dark">
-        <nav class="navbar navbar-expand-lg navbar-dark">
+
+        <!-- NAVBAR-->
+
+        <nav class="navbar navbar-expand-lg navbar-dark sticky-top bg-dark">
             <!-- <div class="container-fluid"></div> -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigator"
                 aria-controls="navigator" aria-expanded="false" aria-label="Toggle navigation">
@@ -143,10 +154,6 @@
                             Kauppa</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="voteButton" data-bs-toggle="modal" data-bs-target="#voteModal"><i
-                                class="fas fa-bullhorn"></i> Äänestä</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="https://puuhamaailma.fi/bannit/"><i class="fas fa-ban"></i>
                             Porttikiellot</a>
                     </li>
@@ -158,230 +165,151 @@
             </div>
             <!-- </div> -->
         </nav>
+
+        <main class="row">
+            <!-- MAIN DATA CONTAINER -->
+            <!-- <div class="row"> -->
+                <!-- Left column -->
+                <div class="col-lg-9 bg-light" id="leftColumn">
+                    <div class="row">
+                        <div class="karuselli py-3">
+                            <div id="carouselIndicators" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0"
+                                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="1"
+                                        aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="2"
+                                        aria-label="Slide 3"></button>
+                                        <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="3"
+                                        aria-label="Slide 4"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img class="d-block w-100" src="/images/1.webp" alt="First slide" />
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100" src="/images/2.webp" alt="Second slide" />
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100" src="/images/3.webp" alt="Third slide" />
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100" src="/images/4.webp" alt="Fourth slide" />
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators"
+                                    data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicators"
+                                    data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- NEWS -->
+                    <div class="row justify-content-center">
+                        <h1 class="display-4 my-3 text-center">uutiset</h1>
+
+                        <div class="card newsCard col-lg-11">
+                            <img src="/images/4.webp" class="card-img-top" alt="kek">
+                            <div class="card-body">
+                            <h5 class="card-title text-dark">Card title</h5>
+                            <p class="card-text text-dark">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a id="readMore" class="text-warning">Lue lisää.</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right column -->
+                <div class="col-lg-3" id="rightColumn">
+                    <div class="row justify-content-center">
+                        <div class="col-md-12 py-2" id="serverWidget">
+                            <div class="card bg-dark">
+                                <div class="card-header bg-warning" style="font-weight: 600;">
+                                    <i class="fas fa-server"></i><span> Palvelimen tila</span>
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-text">
+                                        <div class="pb-2 text-center" id="statusHeader">
+                                            <i id="statusIcon" class="fas fa-sync-alt fa-spin"></i><span class="text-light" id="statusText"
+                                                style="font-weight: 700;">Ladataan..</span>
+                                        </div>
+                                        <div class="row justify-content-center text-center text-lg-start text-light" id="statusContainer" style="display: none;">
+                                            <div class="col-md-4 col-lg-12">
+                                                <span style="font-weight: 500">Pelaajia paikalla: </span><span id="players"></span>
+                                            </div>
+                                            <div class="col-md-4 col-lg-12">
+                                                <span style="font-weight: 500">MC-versio: </span><span id="version"></span>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="text-center" id="statusButtonContainer">
+                                            <a class="joinButton d-flex justify-content-center mb-1" id="copyToClipboard"
+                                                data-clipboard-text="puuhamaailma.fi" data-bs-toggle="tooltip"
+                                                data-bs-placement="bottom" data-bs-trigger="manual"
+                                                title="Osoite kopioitu leikepöydälle!">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                                Pelaa nyt!
+                                            </a>
+                                            <a id="howToJoin" data-bs-toggle="modal" data-bs-target="#joinModal">Miten
+                                                pääsen serverille?</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 pb-2">
+                            <div class="card voteCard bg-dark">
+                                <div class="card-header bg-warning" style="font-weight: 600;">
+                                    <i class="fas fa-bullhorn"></i> Äänestä palvelinta</a>
+                                </div>
+                                <div class="card-body text-center justify-content-center">
+                                    <p class="mb-2 text-light">Auta meitä saamaan näkyvyyttä palvelinlistoilla ja voita samalla upeita palkintoja!
+                                        Voit äänestää klikkaamalla alla olevaa nappia.</p>
+
+                                    <button type="button" class="btn btn-outline-warning btn-sm" data-bs-toggle="modal" data-bs-target="#voteModal">
+                                        Äänestä nyt!</button>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12" id="discordWidget">
+                            <iframe class="" src="https://discord.com/widget?id=201141200793763849&theme=dark" width="100%"
+                                height="450px" allowtransparency="true" frameborder="0"
+                                sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="card bg-dark">
+                                <div class="card-header bg-warning" style="font-weight: 600;">
+                                    <i class="fab fa-twitter"></i><span> Sosiaalinen media</span>
+                                </div>
+                                <div class="card-body">
+                                    <video width=100% height=100% autoplay muted>
+                                        <source src="images/howToConnect.webm" type="video/webm">
+                                    </video>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <!-- </div> -->
+        </main>
     </div>
-
-    <main class="container">
-        <!-- MAIN DATA CONTAINER -->
-        <div class="row">
-            <!-- Left column -->
-            <div class="column col-lg-9 bg-light" id="leftColumn">
-                <div class="row">
-                    <div class="karuselli py-3">
-                        <div id="carouselIndicators" class="carousel slide" data-bs-ride="carousel">
-                            <div class="carousel-indicators">
-                                <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0"
-                                    class="active" aria-current="true" aria-label="Slide 1"></button>
-                                <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="1"
-                                    aria-label="Slide 2"></button>
-                                <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="2"
-                                    aria-label="Slide 3"></button>
-                                    <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="3"
-                                    aria-label="Slide 4"></button>
-                            </div>
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img class="d-block w-100" src="/images/1.webp" alt="First slide" />
-                                </div>
-                                <div class="carousel-item">
-                                    <img class="d-block w-100" src="/images/2.webp" alt="Second slide" />
-                                </div>
-                                <div class="carousel-item">
-                                    <img class="d-block w-100" src="/images/3.webp" alt="Third slide" />
-                                </div>
-                                <div class="carousel-item">
-                                    <img class="d-block w-100" src="/images/4.webp" alt="Fourth slide" />
-                                </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators"
-                                data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicators"
-                                data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque efficitur consequat malesuada.
-                        Quisque porttitor egestas massa vitae ultricies. Nunc dui lectus, molestie eu volutpat eget,
-                        tempor sit amet diam. Cras volutpat at ipsum eget consectetur. Proin auctor purus sit amet risus
-                        fermentum, et dapibus odio dictum. Praesent pretium quis velit ac interdum. Quisque tristique ex
-                        sed metus ultricies, ac viverra sapien bibendum. Nullam vel mattis lectus, aliquet ornare ante.
-                        Nunc porttitor diam id tortor interdum eleifend. Fusce id quam justo. Pellentesque tempor augue
-                        et mollis porttitor. Nunc ut vehicula nulla, ultricies luctus nisi. Integer suscipit dictum
-                        enim, ut euismod tellus pharetra quis. Sed non neque sed ipsum molestie posuere.
-
-                        In eu pretium velit, at ullamcorper felis. Duis at urna quis est tristique mollis. Praesent
-                        ullamcorper dictum purus quis dignissim. Duis hendrerit felis sit amet lectus vehicula ultrices.
-                        Sed feugiat eu ipsum id faucibus. Vestibulum ullamcorper purus vitae cursus tempor. Nullam ac
-                        vestibulum ligula. Quisque varius vulputate luctus. Cras volutpat, ex sit amet gravida molestie,
-                        mauris mi tincidunt leo, pretium viverra elit erat nec quam. Aenean sit amet tempor quam.
-                        Vestibulum elementum elit quis vehicula tincidunt. Phasellus aliquet lacinia massa, non egestas
-                        nibh pretium eget. Suspendisse eu nisl in massa ullamcorper tristique nec vel felis.
-
-                        Etiam ultrices, ante gravida lacinia rhoncus, odio turpis faucibus elit, in mattis nisi ligula
-                        porttitor nisl. Cras vel ex mauris. Nunc non fringilla elit. Morbi tincidunt porttitor elit eget
-                        consequat. Vestibulum ex metus, rhoncus nec vestibulum sed, molestie feugiat eros. Praesent
-                        consectetur sollicitudin imperdiet. Ut sagittis sapien sit amet porta eleifend. Duis in volutpat
-                        massa. Nullam hendrerit id arcu sit amet porttitor. Proin sed mollis velit. Pellentesque eget
-                        magna a felis viverra suscipit. Proin pharetra aliquam nisi pharetra ornare. Quisque eget lorem
-                        quis ante cursus vulputate.
-
-                        Maecenas tincidunt sed sapien vel condimentum. Pellentesque at commodo purus, et condimentum
-                        leo. In vitae consectetur metus, et mollis ante. Nulla ultrices egestas lorem, at consequat est
-                        porta vitae. Suspendisse viverra nulla quis elit lacinia blandit. Nam nec leo felis. Aenean sit
-                        amet lorem eu felis suscipit tincidunt. Aliquam quis blandit risus, eget facilisis tortor.
-
-                        Cras sem dolor, vulputate quis sem at, bibendum placerat diam. Donec eu sem ut ante scelerisque
-                        efficitur consectetur ut augue. Donec eu convallis est. Aenean dignissim massa ac magna
-                        pulvinar, nec hendrerit dui cursus. Integer imperdiet ex quis justo sodales, malesuada ultricies
-                        quam vehicula. Sed malesuada vestibulum purus, sed luctus velit convallis ut. In consectetur
-                        quam varius, elementum metus nec, hendrerit erat. Vestibulum lobortis vestibulum dui eu
-                        pellentesque. Nunc consequat turpis nec neque fringilla cursus. Etiam purus lacus, iaculis
-                        suscipit tincidunt eu, elementum sit amet ante. Duis vel nunc pellentesque, placerat tellus
-                        porta, consectetur ligula. Pellentesque elementum accumsan eros non suscipit. Aenean sit amet
-                        est consectetur, finibus tellus sodales, rhoncus tellus. Quisque eu velit ac ex tincidunt
-                        tincidunt ut sit amet erat. Fusce vel diam sit amet tortor eleifend tempor in a risus. In semper
-                        est massa, id convallis dolor maximus in.
-
-                        Aliquam erat volutpat. Nullam porttitor neque ac magna elementum luctus. Duis pharetra ex quis
-                        enim fringilla aliquet. Maecenas eu accumsan tortor. Nulla facilisi. Suspendisse placerat ante
-                        et urna mattis porta. Nullam accumsan mauris feugiat egestas consequat.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque efficitur consequat malesuada.
-                        Quisque porttitor egestas massa vitae ultricies. Nunc dui lectus, molestie eu volutpat eget,
-                        tempor sit amet diam. Cras volutpat at ipsum eget consectetur. Proin auctor purus sit amet risus
-                        fermentum, et dapibus odio dictum. Praesent pretium quis velit ac interdum. Quisque tristique ex
-                        sed metus ultricies, ac viverra sapien bibendum. Nullam vel mattis lectus, aliquet ornare ante.
-                        Nunc porttitor diam id tortor interdum eleifend. Fusce id quam justo. Pellentesque tempor augue
-                        et mollis porttitor. Nunc ut vehicula nulla, ultricies luctus nisi. Integer suscipit dictum
-                        enim, ut euismod tellus pharetra quis. Sed non neque sed ipsum molestie posuere.
-
-                        In eu pretium velit, at ullamcorper felis. Duis at urna quis est tristique mollis. Praesent
-                        ullamcorper dictum purus quis dignissim. Duis hendrerit felis sit amet lectus vehicula ultrices.
-                        Sed feugiat eu ipsum id faucibus. Vestibulum ullamcorper purus vitae cursus tempor. Nullam ac
-                        vestibulum ligula. Quisque varius vulputate luctus. Cras volutpat, ex sit amet gravida molestie,
-                        mauris mi tincidunt leo, pretium viverra elit erat nec quam. Aenean sit amet tempor quam.
-                        Vestibulum elementum elit quis vehicula tincidunt. Phasellus aliquet lacinia massa, non egestas
-                        nibh pretium eget. Suspendisse eu nisl in massa ullamcorper tristique nec vel felis.
-
-                        Etiam ultrices, ante gravida lacinia rhoncus, odio turpis faucibus elit, in mattis nisi ligula
-                        porttitor nisl. Cras vel ex mauris. Nunc non fringilla elit. Morbi tincidunt porttitor elit eget
-                        consequat. Vestibulum ex metus, rhoncus nec vestibulum sed, molestie feugiat eros. Praesent
-                        consectetur sollicitudin imperdiet. Ut sagittis sapien sit amet porta eleifend. Duis in volutpat
-                        massa. Nullam hendrerit id arcu sit amet porttitor. Proin sed mollis velit. Pellentesque eget
-                        magna a felis viverra suscipit. Proin pharetra aliquam nisi pharetra ornare. Quisque eget lorem
-                        quis ante cursus vulputate.
-
-                        Maecenas tincidunt sed sapien vel condimentum. Pellentesque at commodo purus, et condimentum
-                        leo. In vitae consectetur metus, et mollis ante. Nulla ultrices egestas lorem, at consequat est
-                        porta vitae. Suspendisse viverra nulla quis elit lacinia blandit. Nam nec leo felis. Aenean sit
-                        amet lorem eu felis suscipit tincidunt. Aliquam quis blandit risus, eget facilisis tortor.
-
-                        Cras sem dolor, vulputate quis sem at, bibendum placerat diam. Donec eu sem ut ante scelerisque
-                        efficitur consectetur ut augue. Donec eu convallis est. Aenean dignissim massa ac magna
-                        pulvinar, nec hendrerit dui cursus. Integer imperdiet ex quis justo sodales, malesuada ultricies
-                        quam vehicula. Sed malesuada vestibulum purus, sed luctus velit convallis ut. In consectetur
-                        quam varius, elementum metus nec, hendrerit erat. Vestibulum lobortis vestibulum dui eu
-                        pellentesque. Nunc consequat turpis nec neque fringilla cursus. Etiam purus lacus, iaculis
-                        suscipit tincidunt eu, elementum sit amet ante. Duis vel nunc pellentesque, placerat tellus
-                        porta, consectetur ligula. Pellentesque elementum accumsan eros non suscipit. Aenean sit amet
-                        est consectetur, finibus tellus sodales, rhoncus tellus. Quisque eu velit ac ex tincidunt
-                        tincidunt ut sit amet erat. Fusce vel diam sit amet tortor eleifend tempor in a risus. In semper
-                        est massa, id convallis dolor maximus in.
-
-                        Aliquam erat volutpat. Nullam porttitor neque ac magna elementum luctus. Duis pharetra ex quis
-                        enim fringilla aliquet. Maecenas eu accumsan tortor. Nulla facilisi. Suspendisse placerat ante
-                        et urna mattis porta. Nullam accumsan mauris feugiat egestas consequat.</p>
-                </div>
-            </div>
-
-            <!-- Right column -->
-            <div class="col-lg-3" id="rightColumn">
-                <div class="row justify-content-center">
-                    <div class="col-md-12 py-2" id="serverWidget">
-                        <div class="card bg-dark">
-                            <div class="card-header bg-warning" style="font-weight: 600;">
-                                <i class="fas fa-server"></i><span> Palvelimen tila</span>
-                            </div>
-                            <div class="card-body">
-                                <div class="card-text">
-                                    <div class="pb-2 text-center" id="statusHeader">
-                                        <i id="statusIcon" class="fas fa-sync-alt fa-spin"></i><span id="statusText"
-                                            style="font-weight: 700;">Ladataan..</span>
-                                    </div>
-                                    <div class="row justify-content-center text-center text-lg-start" id="statusContainer" style="display: none;">
-                                        <div class="col-md-4 col-lg-12">
-                                            <span style="font-weight: 500">Pelaajia paikalla: </span><span id="players"></span>
-                                        </div>
-                                        <div class="col-md-4 col-lg-12">
-                                            <span style="font-weight: 500">MC-versio: </span><span id="version"></span>
-                                        </div>
-                                        
-                                    </div>
-                                    <div class="text-center" id="statusButtonContainer">
-                                        <a class="joinButton d-flex justify-content-center mb-1" id="copyToClipboard"
-                                            data-clipboard-text="puuhamaailma.fi" data-bs-toggle="tooltip"
-                                            data-bs-placement="bottom" data-bs-trigger="manual"
-                                            title="Osoite kopioitu leikepöydälle!">
-                                            <span></span>
-                                            <span></span>
-                                            <span></span>
-                                            <span></span>
-                                            Pelaa nyt!
-                                        </a>
-                                        <a id="howToJoin" data-bs-toggle="modal" data-bs-target="#joinModal">Miten
-                                            pääsen serverille?</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12 pb-2">
-                        <div class="card voteCard bg-dark">
-                            <div class="card-header bg-warning" style="font-weight: 600;">
-                                <i class="fas fa-bullhorn"></i> Äänestä palvelinta</a>
-                            </div>
-                            <div class="card-body">
-                                <p class="mb-3">Auta meitä saamaan näkyvyyttä palvelinlistoilla ja voita samalla upeita palkintoja!
-                                    Voit äänestää klikkaamalla alla olevaa nappia.</p>
-
-                                <button type="button" class=" btn btn-outline-warning btn-sm">Äänestä</button>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12" id="discordWidget">
-                        <iframe class="" src="https://discord.com/widget?id=201141200793763849&theme=dark" width="100%"
-                            height="450px" allowtransparency="true" frameborder="0"
-                            sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="card bg-dark">
-                            <div class="card-header bg-warning" style="font-weight: 600;">
-                                <i class="fab fa-twitter"></i><span> Sosiaalinen media</span>
-                            </div>
-                            <div class="card-body">
-                                <video width=100% height=100% autoplay muted>
-                                    <source src="images/howToConnect.webm" type="video/webm">
-                                </video>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
-
     <footer class="footer bg-dark">
         <div class="container py-4">
             <div class="row">

@@ -18,11 +18,12 @@ body {
     opacity: 1 !important;
 }
 
-/*
-.navbar {
-    padding: 0;
-}
 
+.navbar {
+    padding-right: 0 !important;
+    margin-right: 0 !important;
+}
+/*
 .nav-item:hover {
     background-color: #131618;
 }
@@ -44,7 +45,7 @@ body {
 
 
 .nav-link {
-    color: rgb(255, 255, 255) !important;
+    color: rgb(255, 255, 255, .65) !important;
 }
 
 .navbar-dark .navbar-nav .nav-link.active,
@@ -54,6 +55,10 @@ body {
 
 #voteButton {
     cursor: pointer;
+}
+
+#voteModal .modal-title {
+    color: rgb(255, 198, 41) !important;
 }
 
 @media only screen and (min-width: 960px) {
@@ -153,6 +158,18 @@ th {
 .card-body .card-title,
 .card-body .card-text {
     color: white;
+}
+
+.card.newsCard {
+    padding: 0;
+
+    background-color: rgb(231, 231, 231);
+}
+
+.card.newsCard img {
+    object-fit: cover;
+    height: 50%;
+
 }
 
 code {
