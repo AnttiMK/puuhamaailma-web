@@ -230,8 +230,6 @@ code {
     padding-left: 0.375rem;
 }
 
-#statusText.statusOnline {}
-
 #statusIcon.statusOnline {
     color: rgb(0, 255, 149);
     animation: statusOnlinePulse 2s infinite;
