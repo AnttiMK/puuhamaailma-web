@@ -47,8 +47,8 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="container py-5">
+    <div class="container">
+        <header class="header my-5">
             <div class="row justify-content-md-center">
                 <div class="col col-lg-2"></div>
                 <div class="col-md-auto">
@@ -57,13 +57,11 @@
                 <div class="d-flex col col-lg-2 align-items-center"></div>
             </div>
             <div class="row pt-2">
-                <span style="text-align: center; color: #ffffff;">Ainutlaatuisia pelihetkiä jo vuodesta 2016!</span>
+                <span style="text-align: center; color: #ffffff">Ainutlaatuisia pelihetkiä jo vuodesta 2016!</span>
             </div>
-        </div>
-    </header>
+        </header>
 
-    <div class="container sticky-top">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark sticky-top bg-dark mb-2">
             <!-- <div class="container-fluid"></div> -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigator"
                 aria-controls="navigator" aria-expanded="false" aria-label="Toggle navigation">
@@ -87,7 +85,7 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/yllapito.html"><i class="fas fa-users"></i> Henkilökunta</a>
+                        <a class="nav-link" href="yllapito.html"><i class="fas fa-users"></i> Henkilökunta</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -95,10 +93,6 @@
                         <a class="nav-link" href="https://kauppa.puuhamaailma.fi/"><i
                                 class="fas fa-shopping-basket"></i>
                             Kauppa</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-bs-toggle="modal" data-bs-target="#voteModal"><i
-                                class="fas fa-bullhorn"></i> Äänestä</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="https://puuhamaailma.fi/bannit/"><i class="fas fa-ban"></i>
@@ -112,96 +106,105 @@
             </div>
             <!-- </div> -->
         </nav>
-    </div>
 
-    <div class="container bg-light">
-        <div class="row justify-content-md-center">
-            <div class="col-md-8 p-3 bg-warning text-dark" style="font-weight:500;"><i class="fas fa-code"></i>
-                Komennot palvelimella</div>
+        <main class="row">
+            <!-- MAIN DATA CONTAINER -->
+            <!-- <div class="row"> -->
+            <!-- Left column -->
+            <div class="col-lg-12">
+                <div class="content p-3 pb-4 bg-light rounded-top">
+                    <div class="row justify-content-md-center">
+                        <div class="col-md-8 p-3 bg-warning text-dark" style="font-weight:500;"><i class="fas fa-code"></i>
+                            Komennot palvelimella
+                        </div>
+            
+                        <div class="row justify-content-md-center">
+                            <div class="darkerContainer col-md-8">
+                                <h2 class="mt-5 mb-3 text-center"> Yleisimmät komennot</h2>
+                
+                                <table class="table table-responsive">
+                                    <tr>
+                                        <th>Komento</th>
+                                        <th>Toiminto</th>
+                                    </tr>
+                                    <tr>
+                                        <td><code>/spawn</code></td>
+                                        <td>Teleporttaa sinut serverin spawnille.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>/sethome "nimi"</code></td>
+                                        <td>Asettaa kodin nykyiseen sijaintiin.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>/home "nimi"</code></td>
+                                        <td>Teleporttaa sinut kotisi sijaintiin.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>/tpa "pelaajan nimi"</code></td>
+                                        <td>Teleporttaa sinut pelaajan luokse.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>/tpaccept "pelaajan nimi"</code></td>
+                                        <td>Hyväksyy pelaajan lähettämän teleporttaus-pyynnön.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>/warps</code></td>
+                                        <td>Näyttää listan kaikista käytettävissä olevista warpeista.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>/warp "nimi"</code></td>
+                                        <td>Teleporttaa sinut valitsemaasi warppiin.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>/msg "pelaajan nimi"</code></td>
+                                        <td>Lähettää yksityisviestin pelaajalle.</td>
+                                    </tr>
+                                </table>
+                
+                                <h2 class="mt-5 mb-3 text-center">Suojaaminen</h2>
+                
+                                <table class="table table-responsive">
+                                    <tr>
+                                        <th>Komento</th>
+                                        <th>Toiminto</th>
+                                    </tr>
+                                    <tr>
+                                        <td><code>/trust "pelaajan nimi"</code></td>
+                                        <td>Antaa pelaajalle luvan rakentaa claimisi sisälle.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>/untrust "pelaajan nimi"</code></td>
+                                        <td>Poistaa pelaajalta luvan rakentaa claimisi sisälle.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>/trustlist</code></td>
+                                        <td>Näyttää kaikkien pelaajien oikeudet claimisi sisällä.</td>
+                                    </tr>
+                                </table>
+                
+                                <h2 class="mt-5 mb-3 text-center">Ajan äänestys</h2>
+                
+                                <table class="table table-responsive">
+                                    <tr>
+                                        <th>Komento</th>
+                                        <th>Toiminto</th>
+                                    </tr>
+                                    <tr>
+                                        <td><code>/tv</code></td>
+                                        <td>Avaa äänestysvalikon</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>/tv yes:no</code></td>
+                                        <td>Äänestä ajanvaihdon puolesta tai vastaan.</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
 
-        </div>
-        <div class="row justify-content-md-center">
-            <div class="darkerContainer col-md-8">
-                <h2 class="mt-5 mb-3 text-center"> Yleisimmät komennot</h2>
-
-                <table class="table table-responsive">
-                    <tr>
-                        <th>Komento</th>
-                        <th>Toiminto</th>
-                    </tr>
-                    <tr>
-                        <td><code>/spawn</code></td>
-                        <td>Teleporttaa sinut serverin spawnille.</td>
-                    </tr>
-                    <tr>
-                        <td><code>/sethome "nimi"</code></td>
-                        <td>Asettaa kodin nykyiseen sijaintiin.</td>
-                    </tr>
-                    <tr>
-                        <td><code>/home "nimi"</code></td>
-                        <td>Teleporttaa sinut kotisi sijaintiin.</td>
-                    </tr>
-                    <tr>
-                        <td><code>/tpa "pelaajan nimi"</code></td>
-                        <td>Teleporttaa sinut pelaajan luokse.</td>
-                    </tr>
-                    <tr>
-                        <td><code>/tpaccept "pelaajan nimi"</code></td>
-                        <td>Hyväksyy pelaajan lähettämän teleporttaus-pyynnön.</td>
-                    </tr>
-                    <tr>
-                        <td><code>/warps</code></td>
-                        <td>Näyttää listan kaikista käytettävissä olevista warpeista.</td>
-                    </tr>
-                    <tr>
-                        <td><code>/warp "nimi"</code></td>
-                        <td>Teleporttaa sinut valitsemaasi warppiin.</td>
-                    </tr>
-                    <tr>
-                        <td><code>/msg "pelaajan nimi"</code></td>
-                        <td>Lähettää yksityisviestin pelaajalle.</td>
-                    </tr>
-                </table>
-
-                <h2 class="mt-5 mb-3 text-center">Suojaaminen</h2>
-
-                <table class="table table-responsive">
-                    <tr>
-                        <th>Komento</th>
-                        <th>Toiminto</th>
-                    </tr>
-                    <tr>
-                        <td><code>/trust "pelaajan nimi"</code></td>
-                        <td>Antaa pelaajalle luvan rakentaa claimisi sisälle.</td>
-                    </tr>
-                    <tr>
-                        <td><code>/untrust "pelaajan nimi"</code></td>
-                        <td>Poistaa pelaajalta luvan rakentaa claimisi sisälle.</td>
-                    </tr>
-                    <tr>
-                        <td><code>/trustlist</code></td>
-                        <td>Näyttää kaikkien pelaajien oikeudet claimisi sisällä.</td>
-                    </tr>
-                </table>
-
-                <h2 class="mt-5 mb-3 text-center">Ajan äänestys</h2>
-
-                <table class="table table-responsive">
-                    <tr>
-                        <th>Komento</th>
-                        <th>Toiminto</th>
-                    </tr>
-                    <tr>
-                        <td><code>/tv</code></td>
-                        <td>Avaa äänestysvalikon</td>
-                    </tr>
-                    <tr>
-                        <td><code>/tv yes:no</code></td>
-                        <td>Äänestä ajanvaihdon puolesta tai vastaan.</td>
-                    </tr>
-                </table>
+                    </div>
+                </div>
             </div>
-        </div>
+        </main>
     </div>
 
     <!-- SCRIPTS -->
